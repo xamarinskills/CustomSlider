@@ -4,22 +4,23 @@
              xmlns:local="clr-namespace:CustomSliderDemo"
              x:Class="CustomSliderDemo.MainPage"
              xmlns:cs="clr-namespace:CustomSliderDemo"
-             Title="Custom Slider">
+             Title="Switch">
     <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="Custom Slider" FontSize="Large"/>
-            <cs:CustomSlider x:Name="customSlider"
-                             MaxColor="Red" 
-                             MinColor="Yellow" 
-                             ThumbColor="Green" 
-                             Minimum="0" Maximum="100"/>
-            
+        <StackLayout Padding="20" BackgroundColor="Gray" >
+            <Label Text="Switch" FontSize="Large"/>
+           
+                <cs:CustomSwitch x:Name="customSwitch"
+                                SwitchOffColor="Yellow"
+                                 SwitchOnColor="Black"
+                                 SwitchThumbImage="icon"
+                                 HorizontalOptions="CenterAndExpand"
+                                 VerticalOptions="CenterAndExpand"/>
 
-            <cs:CustomSlider MaxColor="Red" 
-                             MinColor="Yellow" 
-                             ThumbColor="Black" 
-                             ThumbImage="icon.png"/>
+                <cs:CustomSwitch SwitchOffColor="Navy"
+                                 SwitchOnColor="Green"
+                                 SwitchThumbColor="Violet"
+                                 HorizontalOptions="CenterAndExpand"
+                                 VerticalOptions="CenterAndExpand"/>
         </StackLayout>
-
     </ContentPage.Content>
 </ContentPage>

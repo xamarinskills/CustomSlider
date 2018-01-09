@@ -16,14 +16,13 @@ namespace CustomSliderDemo.iOS
 {
     public class MySliderRenderer : SliderRenderer
     {
-        private CustomSlider view;
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Slider> e)
         {
             base.OnElementChanged(e);
             if (e.OldElement != null || e.NewElement == null)
                 return;
 
-            view = (CustomSlider)Element;
+           var view = (CustomSlider)Element;
             if (!string.IsNullOrEmpty(view.ThumbImage))
             {
                 //Assigns a thumb image to the specified control states.
